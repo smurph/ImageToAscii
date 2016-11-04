@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 using System.Drawing;
 using System.IO;
 using System.Drawing.Imaging;
 
 namespace ImageToAscii
 {
-    public class ImageToAscii
+    public static class ImageToAscii
     {
 
         private static string[] _characters = new string[6] { " ", ".", "+", "o", "#", "W" };
@@ -35,8 +31,6 @@ namespace ImageToAscii
                     output.Append(getCharacterFromGrayValue(grayValue));
                 }
             }
-
-
             File.WriteAllLines(outputFileName, output.ToString().Split('\n'));
         }
 
@@ -52,15 +46,6 @@ namespace ImageToAscii
 
             // really dark. 
             return "@";
-        }
-
-        private byte[] toByteArray(Image img)
-        {
-            MemoryStream ms = new MemoryStream();
-
-            img.Save(ms, ImageFormat.Png);
-
-            return ms.ToArray();
         }
     }
 }
