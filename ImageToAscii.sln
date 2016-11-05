@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageToAscii", "ImageToAscii\ImageToAscii.csproj", "{BFBF53C8-7046-47C9-AF1E-3000DC2DE814}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertToAscii", "ImageToAscii\ConvertToAscii.csproj", "{BFBF53C8-7046-47C9-AF1E-3000DC2DE814}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{75B0C4CE-EAD1-457F-9438-587BC9019266}"
 EndProject

@@ -51,16 +51,19 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="ImageToAsciiTests.cs" />
+    <Compile Include="ConvertToAscii.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\bird.jpg" />
+    <Content Include="Assets\cat.jpg" />
     <Content Include="Assets\dog.jpg" />
+    <Content Include="Assets\gradient.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ImageToAscii\ImageToAscii.csproj">
+    <ProjectReference Include="..\ImageToAscii\ConvertToAscii.csproj">
       <Project>{bfbf53c8-7046-47c9-af1e-3000dc2de814}</Project>
-      <Name>ImageToAscii</Name>
+      <Name>ConvertToAscii</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
